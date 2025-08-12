@@ -33,13 +33,13 @@
         compatible = "zmk,combos";
 
         zoom_in {
-            bindings = <&kp C_AC_ZOOM_IN>;
+            bindings = <&kp LC(MINUS)>;
             key-positions = <19 20>;
             layers = <0>;
         };
 
         zoom_out {
-            bindings = <&kp C_AC_ZOOM_OUT>;
+            bindings = <&kp LC(PLUS)>;
             key-positions = <19 18>;
             layers = <0>;
         };
@@ -113,10 +113,10 @@
 
         DEFAULT {
             bindings = <
-&kp Q         &kp W      &kp E         &kp R               &kp T                                        &kp Y      &kp U  &kp I      &kp O    &kp P
-&kp A         &kp S      &kp D         &kp F               &kp G        &mkp RCLK       &kp MINUS       &kp H      &kp J  &kp K      &kp L    &mt RCTRL COLON
-&kp Z         &kp X      &kp C         &kp V               &lt 5 B      &kp TAB         &kp APOSTROPHE  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &lt 2 LS(CAPSLOCK)  &lt 1 SPACE  &kp LSHIFT      &kp BACKSPACE   &kp ENTER                             &kp DEL
+&kp Q         &kp W      &kp E         &kp R            &kp T                                        &kp Y      &kp U  &kp I      &kp O    &kp P
+&kp A         &kp S      &kp D         &kp F            &kp G        &mkp RCLK       &kp MINUS       &kp H      &kp J  &kp K      &kp L    &mt RCTRL COLON
+&kp Z         &kp X      &kp C         &kp V            &lt 5 B      &lt 3 TAB       &kp APOSTROPHE  &kp N      &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &lt 2 LA(TILDE)  &lt 1 SPACE  &kp LSHIFT      &kp BACKSPACE   &kp ENTER                             &kp DEL
             >;
 
             sensor-bindings = <&msc_up_down>;
@@ -124,10 +124,10 @@
 
         NUM {
             bindings = <
-&kp MINUS  &kp N7        &kp N8        &kp N9        &kp PLUS                                  &kp CARET         &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
-&kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &trans      &kp UNDERSCORE  &kp EXCLAMATION   &kp AT_SIGN        &kp DLLR              &kp PERCENT            &kp PIPE
-&kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans      &kp EQUAL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
-&trans     &trans        &trans        &trans        &trans        &trans      &trans          &trans                                                                            &kp HASH
+&kp MINUS  &kp N7        &kp N8        &kp N9        &kp PLUS                             &kp CARET         &kp AMPERSAND      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp TILDE
+&kp SLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &trans      &kp UNDER  &kp EXCLAMATION   &kp AT_SIGN        &kp DLLR              &kp PERCENT            &kp PIPE
+&kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &trans      &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp BACKSLASH
+&trans     &trans        &trans        &trans        &trans        &trans      &trans     &trans                                                                            &kp HASH
             >;
 
             sensor-bindings = <&msc_up_down>;
