@@ -43,24 +43,6 @@
             key-positions = <19 18>;
             layers = <0>;
         };
-
-        to_num_layer {
-            bindings = <&to 1>;
-            key-positions = <20 29>;
-            layers = <0>;
-        };
-
-        to_func_layer {
-            bindings = <&to 2>;
-            key-positions = <13 20>;
-            layers = <0>;
-        };
-
-        to_mouse_layer {
-            bindings = <&to 3>;
-            key-positions = <20 30>;
-            layers = <0>;
-        };
     };
 
     macros {
@@ -131,10 +113,10 @@
 
         DEFAULT {
             bindings = <
-&kp Q         &kp W      &kp E         &kp R           &kp T                                      &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A         &kp S      &kp D         &lt 2 F         &kp G      &mkp RCLK       &kp MINUS       &kp H          &kp J  &kp K      &kp L    &mt RCTRL COLON
-&kp Z         &kp X      &kp C         &kp V           &lt 5 B    &kp TAB         &kp APOSTROPHE  &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &kp LANGUAGE_5  &kp SPACE  &kp LSHIFT      &kp ENTER       &kp BACKSPACE                             &kp DEL
+&kp Q         &kp W      &kp E         &kp R            &kp T                                        &kp Y          &kp U  &kp I      &kp O    &kp P
+&kp A         &kp S      &kp D         &lt 2 F          &kp G        &mkp RCLK       &kp MINUS       &kp H          &kp J  &kp K      &kp L    &mt RCTRL COLON
+&kp Z         &kp X      &kp C         &kp V            &lt 5 B      &kp TAB         &kp APOSTROPHE  &kp N          &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LEFT_WIN  &kp LCTRL  &kp LEFT_ALT  &lt 2 LA(GRAVE)  &lt 1 SPACE  &kp LSHIFT      &kp ENTER       &kp BACKSPACE                             &kp DEL
             >;
 
             sensor-bindings = <&msc_up_down>;
@@ -153,10 +135,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &kp LA(LEFT)   &kp LC(PAGE_UP)    &kp LA(RIGHT)  &kp LC(LS(T))                                            &kp F1   &kp F2   &kp F3   &kp F4   &trans
-&trans  &kp LC(LS(S))  &kp LC(PAGE_DOWN)  &kp LC(LS(F))  &kp LG(PRINTSCREEN)  &trans      &trans                  &kp F5   &kp F6   &kp F7   &kp F8   &kp F9
-&trans  &trans         &trans             &trans         &trans               &trans      &trans                  &kp F10  &kp F11  &kp F12  &kp F13  &trans
-&trans  &trans         &trans             &trans         &trans               &trans      &lt_to_layer_0 0 ENTER  &trans                              &trans
+&trans         &kp LA(LEFT)   &kp LC(PAGE_UP)    &kp LA(RIGHT)  &kp LC(LS(T))                                            &kp F1   &kp F2   &kp F3   &kp F4   &trans
+&kp LC(GRAVE)  &kp LC(LS(S))  &kp LC(PAGE_DOWN)  &kp LC(LS(F))  &kp LG(PRINTSCREEN)  &trans      &trans                  &kp F5   &kp F6   &kp F7   &kp F8   &kp F9
+&trans         &trans         &trans             &trans         &trans               &trans      &trans                  &kp F10  &kp F11  &kp F12  &kp F13  &trans
+&trans         &trans         &trans             &trans         &trans               &trans      &lt_to_layer_0 0 ENTER  &trans                              &trans
             >;
 
             sensor-bindings = <&msc_up_down>;
