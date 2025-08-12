@@ -47,16 +47,19 @@
         to_num_layer {
             bindings = <&to 1>;
             key-positions = <20 29>;
+            layers = <0>;
         };
 
         to_func_layer {
             bindings = <&to 2>;
             key-positions = <13 20>;
+            layers = <0>;
         };
 
         to_mouse_layer {
             bindings = <&to 3>;
             key-positions = <20 30>;
+            layers = <0>;
         };
     };
 
