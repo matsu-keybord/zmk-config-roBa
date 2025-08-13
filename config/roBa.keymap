@@ -5,7 +5,7 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define MOUSE 3
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#define ZMK_MOUSEjjjjj_DEFAULT_SCRL_VAL 100
 
 &mt {
     flavor = "balanced";
@@ -101,10 +101,11 @@
             quick-tap-ms = <200>;
         };
 
-        msc_up_down: msc_up_down {
+        msc_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
             label = "MSC_UP_DOWN";
             #sensor-binding-cells = <0>;
+            tap-ms = <20>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
     };
