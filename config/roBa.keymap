@@ -34,13 +34,13 @@
         compatible = "zmk,combos";
 
         zoom_in {
-            bindings = <&kp LC(MINUS)>;
+            bindings = <&kp LC(PLUS)>;
             key-positions = <19 20>;
             layers = <0>;
         };
 
         zoom_out {
-            bindings = <&kp LC(PLUS)>;
+            bindings = <&kp LC(MINUS)>;
             key-positions = <19 18>;
             layers = <0>;
         };
@@ -115,10 +115,10 @@
 
         DEFAULT {
             bindings = <
-&kp Q         &kp W      &kp E         &kp R           &kp T                                              &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A         &kp S      &kp D         &kp F           &kp G        &mkp RCLK             &kp MINUS       &kp H        &kp J  &kp K      &kp L    &mt RCTRL COLON
-&kp Z         &kp X      &kp C         &kp V           &kp B        &kp SINGLE_QUOTE      &kp TAB         &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LEFT_GUI  &kp LCTRL  &kp LEFT_ALT  &lt 3 LS(CAPS)  &lt 1 SPACE  &kp BACKSPACE         &kp LEFT_SHIFT  &lt 2 ENTER                             &lt 5 DELETE
+&kp Q      &kp W         &kp E         &kp R           &kp T                                              &kp Y        &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F           &kp G           &mkp RCLK             &kp MINUS    &kp H        &kp J  &kp K      &kp L    &mt RCTRL COLON
+&kp Z      &kp X         &kp C         &kp V           &kp B           &kp SINGLE_QUOTE      &kp TAB      &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
+&kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &lt 3 LS(CAPS)  &kp LEFT_SHIFT  &kp BACKSPACE         &lt 1 SPACE  &lt 2 ENTER                             &lt 5 DELETE
             >;
 
             sensor-bindings = <&msc_up_down>;
@@ -137,10 +137,10 @@
 
         FUNCTION {
             bindings = <
-&kp LANG5      &kp LC(TAB)    &kp LC(PAGE_UP)    &kp LA(TAB)    &kp LC(LS(T))                      &kp F1   &kp F2   &kp F3   &kp F4   &kp LG(PRINTSCREEN)
-&kp LC(GRAVE)  &kp LC(LS(S))  &kp LC(PAGE_DOWN)  &kp LC(LS(F))  &trans         &trans      &trans  &kp F5   &kp F6   &kp F7   &kp F8   &kp F9
-&trans         &trans         &trans             &trans         &trans         &trans      &trans  &kp F10  &kp F11  &kp F12  &kp F13  &trans
-&trans         &trans         &trans             &trans         &trans         &trans      &trans  &trans                              &trans
+&kp LANG5          &kp LC(LS(TAB))  &kp LC(PAGE_UP)    &kp LC(TAB)    &kp LC(LS(T))                      &kp F1   &kp F2   &kp F3   &kp F4   &kp LG(PRINTSCREEN)
+&kp LC(LS(GRAVE))  &kp LC(LS(S))    &kp LC(PAGE_DOWN)  &kp LC(LS(F))  &trans         &trans      &trans  &kp F5   &kp F6   &kp F7   &kp F8   &kp F9
+&trans             &trans           &trans             &trans         &trans         &trans      &trans  &kp F10  &kp F11  &kp F12  &kp F13  &trans
+&trans             &trans           &trans             &trans         &trans         &trans      &trans  &trans                              &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -148,10 +148,10 @@
 
         MOUSE {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans                      &none   &mkp MB4  &mkp MB3      &mkp MB5   &none
-&kp HOME    &trans  &trans  &trans  &trans  &trans      &trans  &none   &mkp MB1  &kp UP_ARROW  &mkp MB2   &none
-&kp END     &trans  &trans  &trans  &trans  &trans      &trans  &none   &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
+&kp ESCAPE  &trans              &trans            &trans             &trans                      &none   &mkp MB4  &mkp MB3      &mkp MB5   &none
+&kp HOME    &kp LG(LEFT_ARROW)  &kp LG(UP_ARROW)  &kp LG(RIGHT)      &trans  &trans      &trans  &none   &mkp MB1  &kp UP_ARROW  &mkp MB2   &none
+&kp END     &kp LG(LS(LEFT))    &kp LG(DOWN)      &kp LG(LS(RIGHT))  &trans  &trans      &trans  &none   &kp LEFT  &kp DOWN      &kp RIGHT  &trans
+&trans      &trans              &trans            &trans             &trans  &trans      &trans  &trans                                     &trans
             >;
 
             sensor-bindings = <&msc_up_down>;
