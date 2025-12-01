@@ -15,6 +15,7 @@
 
 &trackball {
     // automouse-layer = <3>;
+
     scroll-layers = <4>;
 
     // arrows {
@@ -139,10 +140,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4  &mkp MB3      &mkp MB5   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &kp UP_ARROW  &mkp MB2   &trans
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans  &trans  &trans  &sl 0   &trans  &trans      &trans  &trans                                     &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &mkp MB4          &mkp MB3              &mkp MB5           &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1          &kp LS(LC(UP_ARROW))  &mkp MB2           &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LS(LC(LEFT))  &kp LS(LC(DOWN))      &kp LS(LC(RIGHT))  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                             &trans
             >;
 
             sensor-bindings = <&msc_up_down>;
@@ -150,10 +151,10 @@
 
         SCROLL {
             bindings = <
-&trans  &kp LG(LEFT)            &kp LG(UP_ARROW)    &kp LG(RIGHT)      &trans                      &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(LG(LEFT_ARROW))  &kp LG(DOWN_ARROW)  &kp LS(LG(RIGHT))  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LC(LEFT)            &kp LC(UP_ARROW)    &kp LC(RIGHT)      &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans                  &kp LC(DOWN)        &trans             &trans  &trans      &trans  &trans                          &trans
+&trans  &kp LEFT                &kp UP_ARROW      &kp RIGHT          &trans                      &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LG(LEFT_ARROW))  &kp DOWN_ARROW    &kp LS(LG(RIGHT))  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LG(LEFT)            &kp LG(UP_ARROW)  &kp LG(RIGHT)      &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans                  &kp LG(DOWN)      &trans             &trans  &trans      &trans  &trans                          &trans
             >;
         };
 
