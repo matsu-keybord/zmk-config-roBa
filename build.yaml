@@ -19,11 +19,10 @@
 ---
 include:
 # - board: seeeduino_xiao_ble
- - board: xiao_ble
+ - board: seeeduino_xiao_ble
    shield: roBa_R
    snippet: studio-rpc-usb-uart
-   cmake-args: -DEXTRA_DTS_INCLUDES_REMOVE=/tmp/zmk-config/zephyr/dts/bindings/input/pixart,pmw3610.yaml
- - board: xiao_ble
+ - board: seeeduino_xiao_ble
    shield: roBa_L
  - board: xiao_ble
-   shield: settings_reset
+   shield: seeeduino_xiao_ble
