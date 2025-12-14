@@ -22,7 +22,7 @@ include:
  - board: xiao_ble
    shield: roBa_R
    snippet: studio-rpc-usb-uart
-   cmake-args: -DEXTRA_DTS_INCLUDES_REMOVE="/tmp/zmk-config/zephyr/dts/bindings/input"
+   cmake-args: -DEXTRA_DTS_INCLUDES_REMOVE=dts/bindings/input
  - board: xiao_ble
    shield: roBa_L
  - board: xiao_ble
