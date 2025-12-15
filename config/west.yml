@@ -12,5 +12,6 @@ manifest:
     - name: zmk-pmw3610-driver
       remote: kumamuk-git
       revision: main
+      path: drivers/zmk-pmw3610-driver
   self:
     path: config
