@@ -21,22 +21,20 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
 
-        input-processors = <&zip_temp_layer 3 5000>;
+        input-processors = <&zip_temp_layer 3 10000>;
     };
 };
 
 &zip_temp_layer {
-    // excluded-positions = <
-        // 6 U
-        // 7 I
-        // 8 O
-        // 18 J
-        // 20 L
-        // 34 Win
-        // 35 Ctrl
-        // 36 Alt
-        // 39 Shift
-    // >;
+    excluded-positions = <
+        6    // U
+        7    // I
+        8    // O
+        18    // J
+        20    // L
+        34    // ctrl
+        38    // shift
+    >;
     require-prior-idle-ms = <200>;
 };
 
