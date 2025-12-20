@@ -143,7 +143,7 @@
 &trans          &trans      &trans  &trans  &trans                      &trans  &mkp MB4  &mkp MB3      &mkp MB5   &trans
 &kp LCTRL       &kp RSHIFT  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &kp UP_ARROW  &mkp MB2   &trans
 &kp LC(LSHIFT)  &trans      &trans  &trans  &trans  &trans      &trans  &trans  &kp LEFT  &kp DOWN      &kp RIGHT  &trans
-&trans          &trans      &trans  &trans  &trans  &trans      &trans  &trans                                     &trans
+&trans          &trans      &trans  &to 0   &trans  &trans      &trans  &trans                                     &trans
             >;
 
             sensor-bindings = <&msc_up_down>;
