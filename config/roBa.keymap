@@ -66,14 +66,28 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        FONT_SMALL {
+            bindings = <&kp LC(LS(LESS_THAN))>;
+            key-positions = <23 24>;
+        };
+
+        FONT_LARGE {
+            bindings = <&kp LS(LC(GREATER_THAN))>;
+            key-positions = <24 25>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         DEFAULT {
             bindings = <
 &kp Q   &kp W   &kp E   &kp R   &kp T                          &kp Y   &kp U  &kp I      &kp O    &kp P
-&kp A   &kp S   &kp D   &kp F   &kp G   &mkp RCLK      &trans  &kp H   &kp J  &kp K      &kp L    &trans
-&kp Z   &kp X   &kp C   &kp V   &kp B   &trans         &trans  &kp N   &kp M  &kp COMMA  &kp DOT  &trans
+&kp A   &kp S   &kp D   &kp F   &kp G   &mkp RCLK      &trans  &kp H   &kp J  &kp K      &kp L    &kp COLON
+&kp Z   &kp X   &kp C   &kp V   &kp B   &trans         &trans  &kp N   &kp M  &kp COMMA  &kp DOT  &kp QUESTION
 &trans  &trans  &trans  &trans  &trans  &trans         &trans  &trans                             &trans
             >;
 
@@ -93,11 +107,13 @@
 
         SYMBOLS {
             bindings = <
-&trans           &trans    &trans      &trans         &trans                           &trans                &trans                 &trans            &trans             &trans
-&kp EXCLAMATION  &kp HASH  &kp DOLLAR  &kp AMPERSAND  &kp PERCENT  &trans      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans            &trans             &kp AT_SIGN
-&trans           &trans    &trans      &trans         &trans       &trans      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
-&trans           &trans    &trans      &trans         &trans       &trans      &trans  &trans                                                                            &trans
+&trans           &kp CARET      &kp GRAVE   &trans            &trans                           &trans                &trans                 &kp MINUS          &kp TILDE         &kp PIPE
+&kp EXCLAMATION  &kp HASH       &kp DOLLAR  &kp AMPERSAND     &kp PERCENT  &trans      &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp AT_SIGN        &kp SEMI          &kp LEFT_BRACKET
+&trans           &kp LESS_THAN  &kp SLASH   &kp GREATER_THAN  &trans       &trans      &trans  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp RIGHT_BRACKET
+&trans           &trans         &trans      &trans            &trans       &trans      &trans  &trans                                                                            &trans
             >;
+
+            sensor-bindings = <&msc_up_down>;
         };
 
         MOUSE {
@@ -116,6 +132,8 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                          &trans
             >;
+
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         BLUETOOTH {
