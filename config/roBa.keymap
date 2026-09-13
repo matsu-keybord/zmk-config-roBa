@@ -139,10 +139,10 @@
 
         SHORTCUT {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                         &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans     &trans      &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &kp GRAVE  &trans      &trans  &trans                          &trans
+&trans         &trans  &trans         &kp LG(R)      &kp LC(LS(T))                                     &trans  &trans  &trans  &trans         &kp PRINTSCREEN
+&kp LG(LS(S))  &trans  &trans         &kp LC(LS(F))  &trans         &trans      &kp LC(LS(SEMICOLON))  &trans  &trans  &trans  &kp LC(LS(L))  &kp LA(LS(RIGHT_ARROW))
+&trans         &trans  &kp LC(LS(C))  &kp LC(LS(V))  &trans         &trans      &trans                 &trans  &trans  &trans  &trans         &trans
+&trans         &trans  &trans         &trans         &kp GRAVE      &trans      &trans                 &trans                                 &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
