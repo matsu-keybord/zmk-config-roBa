@@ -7,6 +7,9 @@
 
 #define MOUSE 3
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
+#define JP_YEN 0x89
+#define JP_PIPE LS(0x89)
+#define JP_UNDERSCORE LS(0x87)
 
 &mt {
     flavor = "balanced";
@@ -127,7 +130,7 @@
 
         SYMBOLS {
             bindings = <
-&kp ESCAPE       &kp EQUAL      &kp LEFT_BRACE  &trans            &trans                           &trans           &kp UNDERSCORE        &kp UNDERSCORE    &kp PLUS          &kp LS(NON_US_BACKSLASH)
+&kp ESCAPE       &kp EQUAL      &kp LEFT_BRACE  &trans            &trans                           &trans           &kp UNDERSCORE        &kp JP_UNDERSCORE    &kp PLUS          &kp LS(NON_US_BACKSLASH)
 &kp EXCLAMATION  &kp HASH       &kp DOLLAR      &kp CARET         &kp PERCENT  &trans      &trans  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp RIGHT_BRACKET
 &trans           &kp LESS_THAN  &kp SLASH       &kp GREATER_THAN  &trans       &trans      &trans  &kp RIGHT_BRACE  &kp PIPE              &kp AT_SIGN       &kp AMPERSAND     &kp BACKSLASH
 &trans           &trans         &trans          &trans            &trans       &trans      &trans  &trans                                                                     &trans
