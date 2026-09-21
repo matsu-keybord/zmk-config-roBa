@@ -108,10 +108,10 @@
 
         DEFAULT {
             bindings = <
-&kp Q      &kp W         &kp E         &kp R        &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A      &kp S         &kp D         &kp F        &kp G  &mkp RCLK          &kp SEMICOLON       &kp H        &kp J  &kp K      &kp L    &mt LCTRL MINUS
-&kp Z      &kp X         &kp C         &kp V        &kp B  &to 1              &to 3               &kp N        &kp M  &kp COMMA  &kp DOT  &kp QUESTION
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &lang  &kp BACKSPACE      &mt LEFT_SHIFT TAB  &lt 4 ENTER                             &lt 5 DELETE
+&kp Q             &kp W         &kp E         &kp R        &kp T                                         &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LEFT_SHIFT A  &kp S         &kp D         &kp F        &kp G  &mkp RCLK          &kp SEMICOLON       &kp H        &kp J  &kp K      &kp L    &mt LCTRL MINUS
+&kp Z             &kp X         &kp C         &kp V        &kp B  &to 1              &to 3               &kp N        &kp M  &kp COMMA  &kp DOT  &kp QUESTION
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 SPACE  &lang  &kp BACKSPACE      &mt LEFT_SHIFT TAB  &lt 4 ENTER                             &lt 5 DELETE
             >;
 
             sensor-bindings = <&msc_up_down>;
@@ -130,10 +130,10 @@
 
         SYMBOLS {
             bindings = <
-&kp ESCAPE       &kp EQUAL      &kp LEFT_BRACE  &trans            &trans                           &trans           &kp UNDERSCORE        &kp JP_UNDERSCORE    &kp PLUS          &kp LS(NON_US_BACKSLASH)
-&kp EXCLAMATION  &kp HASH       &kp DOLLAR      &kp CARET         &kp PERCENT  &trans      &trans  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET  &kp SINGLE_QUOTE  &kp RIGHT_BRACKET
-&trans           &kp LESS_THAN  &kp SLASH       &kp GREATER_THAN  &trans       &trans      &trans  &kp RIGHT_BRACE  &kp PIPE              &kp AT_SIGN       &kp AMPERSAND     &kp BACKSLASH
-&trans           &trans         &trans          &trans            &trans       &trans      &trans  &trans                                                                     &trans
+&kp ESCAPE       &kp EQUAL      &kp LEFT_BRACE  &trans            &trans                           &trans           &kp UNDERSCORE        &kp JP_UNDERSCORE  &kp PLUS          &kp LS(NON_US_BACKSLASH)
+&kp EXCLAMATION  &kp HASH       &kp DOLLAR      &kp CARET         &kp PERCENT  &trans      &trans  &kp ASTERISK     &kp LEFT_PARENTHESIS  &kp LEFT_BRACKET   &kp SINGLE_QUOTE  &kp RIGHT_BRACKET
+&trans           &kp LESS_THAN  &kp SLASH       &kp GREATER_THAN  &trans       &trans      &trans  &kp RIGHT_BRACE  &kp PIPE              &kp AT_SIGN        &kp AMPERSAND     &kp BACKSLASH
+&trans           &trans         &trans          &trans            &trans       &trans      &trans  &trans                                                                      &trans
             >;
 
             sensor-bindings = <&msc_up_down>;
