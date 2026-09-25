@@ -96,11 +96,6 @@
             bindings = <&kp LS(LC(GREATER_THAN))>;
             key-positions = <24 25>;
         };
-
-        shift-colon {
-            bindings = <&kp SINGLE_QUOTE>;
-            key-positions = <16 40>;
-        };
     };
 
     keymap {
